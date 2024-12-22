@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="task7.js" defer></script>
+    <link rel="stylesheet" href="task7.1.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<title>SHELTER</title>
+</head>
+<body >
+    <div   class="block4">
+
+        <div class="flex-container">
+            <div class="men4">
+                <label  for="categories"></label>
+                <select id="categories" onchange="redirectToPage()">
+                    <option >Категория</option>
+                    <option value="dog.html">Собаки</option>
+                    <option value="pup.html" >Щенки</option>
+                    <option value="cat.html" >Коты</option>
+                    <option value="kitty.html">Котята</option>
+                </select>
+                <script>
+                    function redirectToPage() {
+                        const select = document.getElementById("categories");
+                        const selectedValue = select.value;
+                        
+                        if (selectedValue) {
+                            window.location.href = selectedValue; // Переход на выбранный URL
+                        }
+                    }
+                    </script>
+
+            </div>
+            <div class="men1" class="item1"> <a  href="glaf.html" > <img src="image1.png"  id="anim3" height="75px"></a></div>
+            <div class="men2"  class="item1"><a href="task.html"><img src="image12.png" id="anim3"  height="130px"></a></div>
+            <div class="men3"   class="item1">  <a href="merop.html">  <img src="image.png" id="anim3"  height="130px"></a></div>
+        </div>
+    </div>
+    <div class="mer">Наши мероприятия</div>
+    <div class="contar">
+        <div class="itemy"><video autoplay loop muted>
+            <source src="denn.mp4" type="video/mp4"></div>
+        <div class="itemy"><video autoplay loop muted>
+            <source src="praz.mp4" type="video/mp4"></div>
+        <div class="itemy"><video autoplay loop muted>
+            <source src="sem.mp4" type="video/mp4"></div>
+        <div class="itemy"><video autoplay loop muted>
+            <source src="zabeg.mp4" type="video/mp4"></div>
+    </div>
+    <div class="tell"> Контакты : <a href ="tel:+375291382153">+375(29)1382153</a></div>
+
+<div class="footer">
+    <div>  <a href="viber://chat?number=+375291382153" target="_blank"><img  height="80px"  src="vaber.png"> </a> </div>
+   <div>  <a href="https://www.instagram.com/shelter_animal_?igsh=MWl1eHRrMG53aWgzcg=="><img   class="telega1"  height="80px" src="inst.png"></a></div>
+   <div><a href="https://t.me/Arina_petrushko" target="_blank"><img height="80px" class="telega"  src="teleg.jpg"> </a></div>
+</div>
+</body>
+</html>
